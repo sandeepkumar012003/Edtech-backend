@@ -23,12 +23,12 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://edtech-frontend-dusky.vercel.app/",
     credentials: true,
   })
 );
 app.options("*", cors({
-  origin:  "http://localhost:3000",
+  origin:  "https://edtech-frontend-dusky.vercel.app/",
   credentials: true,
 }));
 
